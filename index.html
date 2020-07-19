@@ -34,7 +34,7 @@
                                 <li><a href="capabilities.html" title="Capabllities ">Capabllities</a></li>
                                 <li><a href="about.html" title="About Us">About Us</a></li>
                                 <li><a href="careers.html" title="Careers">Careers</a></li>
-                                <li><a href="#request-quote-form" title="request A Quote" class="request-quote">request A Quote</a></li>
+                                <li><a href="#request-quote-form" title="Request A Quote" class="request-quote">Request A Quote</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -62,15 +62,40 @@
                    <button class="site-btn" name="submit">Submit</button>
                </div>
             </form>
+
+            <form id="contact-form" class="white-popup-block mfp-hide request-quote-form">
+                      <h1>Contact Us</h1>
+                      <div class="form-block">
+                          <label for="full-name">Full Name</label>
+                          <input type="text" name="fname" id="full-name">
+                      </div>
+                      <div class="form-block">
+                          <label for="company">Company</label>
+                          <input type="text" name="cname" id="company">
+                      </div>
+                      <div class="form-block">
+                          <label for="email">Email</label>
+                          <input type="email" name="email" id="email">
+                      </div>
+                      <div class="form-block">
+                          <label for="phone">Phone Number</label>
+                          <input type="tel" name="pnumber" id="phone">
+                      </div>
+                      <div class="form-btn">
+                          <button class="site-btn" name="submit">Submit</button>
+                      </div>
+                    </form>
+
         </header>
         <section class="home-banner" style="background-image: url(images/home-banner.jpg)">
             <div class="container">
                 <div class="home-banner-caption">
                     <h1>High Tech manufacturing</h1>
                     <p>AMT Provides high-tech machining for th world's most complex and ambitious programs</p>
-                    <a href="#" title="Learn More" class="clip-btn">Learn More</a>
+                    <a href="our-work.html" title="View Our Work" class="clip-btn">View Our Work</a>
                 </div>
             </div>
+            
         </section>
         <section class="trusted-wrap">
             <div class="container">
@@ -117,9 +142,9 @@
                                 <span>The Predator Drone L3 Harris</span>
                             </div>
                         </div>
-                        <div class="see-more-btn">
+                        <!-- <div class="see-more-btn">
                             <a href="capabilities.html" title="See More" class="site-btn">See More</a>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -135,7 +160,7 @@
                             <div class="step-left">
                                 <h3>Technology</h3>
                                 <p>Technology is no central to our success that It's even in our name. Beginning with our Installation of the first CNC mill in the Salt Lake Valley, we've always leveraged cuttin-edge technology to provide high quality with efficiency. Today, our horizontal mills, high-speed milling machines, 3 turret lathes, and innovative tooling allow us to drill, mill and turn at a fraction of the total cost and lead-time of traditional machining.</p>
-                                <a href="#" title="Contact Us" class="arrow-btn">Contact Us</a>
+                                <a href="#contact-form" title="Contact Us" class="contact-form arrow-bt">Contact Us</a>
                             </div>
                             <div class="step-right">
                                 <div class="step-img-box" style="background-image: url(images/technology-big-img.jpg);">
@@ -152,7 +177,7 @@
                             <div class="step-left">
                                 <h3>Process</h3>
                                 <p>Our people and technology are important, but our core processes are the foundation for our impressive record of producing even difficult parts right the first time. We are ISO90001 and AS9100 certified, knowledge management and continuous improvement systems and techniques to help achieve better than 99.5 percent quality conformance. </p>
-                                <a href="#" title="Contact Us" class="arrow-btn">Contact Us</a>
+                                <a href="#contact-form" title="Contact Us" class="arrow-btn">Contact Us</a>
                             </div>
                             <div class="step-right">
                                 <div class="step-img-box" style="background-image: url(images/process-big-img.jpg);">
@@ -256,12 +281,14 @@
                             </div>
                         </div>
                         <div class="copy-right">
-                            <p>&copy; 2020 AMT Inc.</p>
+                            <p>&copy; 2020 Advance Manufacturing Technology</p>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
+
+
     </div>
     <script src="js/menu.js" type="text/javascript"></script>
     <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
@@ -269,6 +296,12 @@
     <script src="js/css_browser_selector.min.js" type="text/javascript"></script>
     <script src="js/slick.min.js" type="text/javascript"></script>
     <script src="js/general.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_okghD1lcCqvFYyP2u8itG");
+       })();
+    </script>
 </body>
 
 </html>

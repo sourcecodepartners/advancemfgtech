@@ -87,7 +87,7 @@ $(document).ready(function () {
         }
     });
     
-     /*************contact form popup js**********/
+    /*************contact form popup js**********/
     $('.contact-form').magnificPopup({
         type: 'inline',
         preloader: false,
@@ -102,6 +102,29 @@ $(document).ready(function () {
             }
         }
     });
+
+    var requestQuoteForm = $("form");
+    
+    requestQuoteForm.submit(function(event){
+      event.preventDefault();
+
+      // Change to your service ID, or keep using the default service
+      var service_id = "default_service";
+      var template_id = "advancemfgtech_request_a_quote";
+
+      requestQuoteForm.find(".site-btn").text("Sending...");
+      
+      emailjs.sendForm(service_id,template_id,requestQuoteForm[0])
+        .then(function(){ 
+            requestQuoteForm.find(".site-btn").text("Quote Requested");
+        }, function(err) {
+           alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+           myform.find(".site-btn").text("Submit");
+        });
+
+      return false;
+    });
+
     /****************verticle tabing js*******************/
     $('#parentHorizontalTab').easyResponsiveTabs({
         type: 'default', //Types: default, vertical, accordion
@@ -133,8 +156,6 @@ function stickyHeader() {
         $("body").removeClass("stickyHeader");
     }
 }
-
-
 
 
 /* jQuery
