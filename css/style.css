@@ -324,6 +324,7 @@ header.site-header:before {position: absolute;content: '';left: 0;right: 0;top: 
 .footer-block ul li{display: block;margin-bottom: 20px;position: relative;    padding-left: 20px;}
 .footer-block ul li:before{position: absolute;content: ''; left: 0; top:7px; width:8px; height:8px; border-radius: 50%;background-color: #fff;}
 .footer-block ul li span{font-family: 'Sansation';font-weight: 400;font-size: 14px;color: #fff;text-transform: uppercase;display: inline-block;}
+.footer-block a {color: white; }
 /*.footer-block ul li a:hover{color:#9a9a9a;}*/
 .footer-main{background-repeat: no-repeat; background-size: cover;height:auto;position: relative;padding: 163px 0 0 0;}
 /*.footer-main:before{position: absolute;content: '';left: 0; top: 0; right: 0; bottom: 0;background-color:rgba(0,0,0,0.96);}*/
@@ -332,6 +333,7 @@ header.site-header:before {position: absolute;content: '';left: 0;right: 0;top: 
 .site-footer:after{position: absolute;content: '';top:5px;left: 0;width: 0;height: 0;border-left:925px solid #00157f;border-top: 60px solid transparent;transform: skewY(-2.6deg);z-index: 11;}
 .copy-right p{font-size: 14px;color: #fff;text-align: center; margin-bottom: 0;}
 .copy-right{padding: 23px 0;}
+
 /***************footer css end here************/
 
 /*****************capabilities page css start here************/
