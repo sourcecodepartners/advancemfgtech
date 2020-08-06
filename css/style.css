@@ -43,7 +43,7 @@ img {max-width: 100%;display: inline-block;vertical-align: top;}
 a { color: #00094b; }
 a:hover {color:#0c0c0c;}
 p {font-size:18px;color:#585858;line-height: 1.76; margin-bottom: 25px;font-family:'Sansation';font-weight: 400;}
-h1 {font-size:64px;font-family:'Sansation';font-weight:700;color:#000000;margin-bottom:25px; line-height:1;text-transform: uppercase;}
+h1 {font-size:64px;font-family:'Sansation';font-weight:700;color:#fff;margin-bottom:25px; line-height:1;text-transform: uppercase;}
 h2 {font-size:42px;font-family:'Sansation';color:#000;font-family:'Sansation';font-weight:700;margin-bottom:25px;line-height:1.1;text-transform: uppercase;}
 h3 {font-size:30px;font-family:'Sansation';color:#000;margin-bottom:25px;line-height:1;}
 h4 {font-size:24px;font-family:'Sansation';color:#000;margin-bottom:25px;line-height:1;}
@@ -53,6 +53,7 @@ a, button, .btn { outline: none !important; transition: all 0.3s ease-in-out; -m
 input {-webkit-appearance: none; border-radius: 0px; }
 body {font-size:18px;-webkit-font-smoothing: antialiased;font-family:'Sansation';font-weight: 400;color:#000;}
 ul, li { list-style-type: none; }
+.black { color: #000 !important; }
 /******default css end here*******/
 
 
@@ -217,11 +218,11 @@ header.site-header:before {position: absolute;content: '';left: 0;right: 0;top: 
 /******************************************************home page css start here************************************************/
 
 /***********home banner section css start here************/
-.home-banner{background-repeat: no-repeat; background-size: cover; background-position: center center;height:629px;position: relative;display: flex;overflow: hidden;}
+.home-banner{background-repeat: no-repeat; background-size: cover; background-position: center center; height:629px;position: relative;display: flex;overflow: hidden;}
 .home-banner .container{display: flex;align-items: center;}
 .home-banner:before{position: absolute;top: 95%;background: #fff;height: 300px;width: 100%;content: '';transform: skewY(-1.9deg);}
 .home-banner:after{position: absolute;content: '';bottom: -13px;right: 0;width: 0;height: 0;border-top: 0px solid transparent;border-right:952px solid #00157f;border-bottom: 61px solid transparent;transform: skewY(-1.9deg);}
-.home-banner-caption p{font-size: 20px;    margin-bottom:26px;    line-height: 1.5;}
+.home-banner-caption p{font-size: 20px;    margin-bottom:26px;    line-height: 1.5; color: #fff;}
 .home-banner-caption h1{margin-bottom: 15px;line-height: 0.98;}
 .home-banner-caption{max-width: 581px;}
 .clip-btn{clip-path:polygon(0 34%, 13% 0%, 21% 0, 85% 0%, 100% 0, 100% 15%, 100% 68%, 83% 109%, 82% 100%, 15% 100%, 0 100%, 0% 85%);background-color: #00094b;padding:20px 38px;text-transform: uppercase;color: #fff;font-family: 'Sansation';font-weight: 700;border: 2px solid #fff;position: relative;display: inline-block;font-size: 16px;-webkit-clip-path:polygon(0 34%, 13% 0%, 21% 0, 85% 0%, 100% 0, 100% 15%, 100% 68%, 83% 109%, 82% 100%, 15% 100%, 0 100%, 0% 85%);}
@@ -341,7 +342,7 @@ header.site-header:before {position: absolute;content: '';left: 0;right: 0;top: 
 .inner-page-banner .container{display: flex; align-items: center;}
 .inner-page-banner:before{position: absolute;top: 94.7%;background: #fff;height: 300px;width: 100%;content: '';transform: skewY(-1.6deg);}
 .inner-page-banner:after{position: absolute;content: '';bottom: -12px;right: 0;width: 0;height: 0;border-top: 0px solid transparent;border-right:952px solid #00157f;border-bottom: 60px solid transparent;transform: skewY(-2.3deg);}
-.innerPage-banner-caption p{color: #181616;}
+.innerPage-banner-caption p {color: #fff;}
 .innerPage-banner-caption h1{font-size: 52px;    letter-spacing: 2.2px;    margin-bottom: 10px;}
 .innerPage-banner-caption{max-width: 585px;}
 .capability-banner .innerPage-banner-caption p{letter-spacing: 1px;}
@@ -539,7 +540,7 @@ h2.resp-accordion:first-child {border-top: 1px solid #c1c1c1;/* !important;*/}
 .about-section.join-our-team .about-sec-content h2:first-child {margin: 0;}
 .about-section.join-our-team .about-technology-heading {max-width: 830px;margin: 0 auto;width: 100%;margin-bottom: 125px;}
 .about-section.join-our-team .about-technology-heading a.site-btn {background-color: #001580;}
-.about-us-pg .home-banner-caption p {color: #181616;}
+.about-us-pg .home-banner-caption p {color: #fff;}
 
 /*************careers page css start here************/
 .careers-page footer.site-footer {overflow: hidden;}
