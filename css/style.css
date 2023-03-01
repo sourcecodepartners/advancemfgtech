@@ -354,7 +354,7 @@ header.site-header:before {position: absolute;content: '';left: 0;right: 0;top: 
 .tab-contain-parent{display: flex; flex-wrap: wrap;margin: 0 -22px;}
 .tab-contain-block{width: 50%;    padding: 0 22px;}
 .tab-con-title{background-color: #e1e6fe;padding:49px 41px;position: relative;}
-.tab-con-title h3{font-size: 28px;color: #1a1818;margin-bottom: 0;}
+.tab-con-title h3{font-size: 28px;color: #1a1818;margin-bottom: 0; text-transform: uppercase;}
 .machine-img{position: absolute;right:41px;top: -47px;}
 .tab-block-content strong{font-size: 21px;color: #1a1818;display: block;    margin-bottom: 8px;}
 .tab-block-content p{color: #666;}
